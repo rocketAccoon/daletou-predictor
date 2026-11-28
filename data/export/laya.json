@@ -1329,6 +1329,67 @@
   },
   "decisions": [
     {
+      "issue": "26137",
+      "selected_model": "markov",
+      "label": "马尔可夫链",
+      "front": [
+        12,
+        22,
+        29,
+        32,
+        33
+      ],
+      "back": [
+        1,
+        2
+      ],
+      "score": 0.1651,
+      "model_version": "daletou-decision-v1",
+      "trained_through_issue": "26116",
+      "candidate_scores": [
+        {
+          "model": "random",
+          "score": 0.1131
+        },
+        {
+          "model": "frequency",
+          "score": 0.0856
+        },
+        {
+          "model": "bayesian",
+          "score": 0.0743
+        },
+        {
+          "model": "markov",
+          "score": 0.1651
+        },
+        {
+          "model": "xgboost",
+          "score": 0.0727
+        },
+        {
+          "model": "lstm",
+          "score": 0.0255
+        },
+        {
+          "model": "transformer",
+          "score": 0.0886
+        },
+        {
+          "model": "genetic",
+          "score": 0.0871
+        },
+        {
+          "model": "ensemble",
+          "score": 0.0574
+        }
+      ],
+      "kind": "prospective",
+      "result": null,
+      "decided_at": "2026-11-28T15:38:09.612555+00:00",
+      "source_sha256": "5111ad453b182fd5ebed7bc43e25172c936eff6071f28664b4e53026ffce577e"
+    },
+    {
       "issue": "26136",
       "selected_model": "transformer",
       "label": "Transformer",
@@ -1385,9 +1446,30 @@
         }
       ],
       "kind": "prospective",
-      "result": null,
+      "result": {
+        "front_hit": 0,
+        "back_hit": 0,
+        "level": null,
+        "amount": 0,
+        "amount_basis": "estimated_rule_schedule"
+      },
       "decided_at": "2026-11-25T19:46:10.377905+00:00",
-      "source_sha256": "22628c3e6d93251e0f4170c1fc1dafd6939c9b1c9ee2d5b1a969e504ec62e60e"
+      "source_sha256": "22628c3e6d93251e0f4170c1fc1dafd6939c9b1c9ee2d5b1a969e504ec62e60e",
+      "real": {
+        "front": [
+          1,
+          12,
+          24,
+          28,
+          32
+        ],
+        "back": [
+          1,
+          8
+        ],
+        "date": "2026-11-28"
+      },
+      "evaluated_at": "2026-11-28T15:37:12.878131+00:00"
     },
     {
       "issue": "26135",
@@ -3253,7 +3335,7 @@
       "trained_through_issue": "26098"
     }
   ],
-  "generated_at": "2026-11-25T19:46:10+00:00",
+  "generated_at": "2026-11-28T15:38:09+00:00",
   "active_model": {
     "version": "daletou-decision-v1",
     "model_path": "~/laya-lab/models/daletou-decision-v1",
